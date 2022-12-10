@@ -1,18 +1,12 @@
 
-// CHECK FOR CLASS AND METHOD 
-// CHECK FOR ARRAY 
-// CHECK FOR JS NOTATION
-// CHECK FOR AS MODELS AND NODES
-// CHECK FPR
-// CHECK FDOR
-
-
-
+// check for array and build using the api calling and fetching the data as above
 document.getElementById("alice").addEventListener("click",book);
 document.getElementById("hyde").addEventListener("click",book);
 document.getElementById("lord").addEventListener("click",book);
-// CHECK FOR CLASS AND METHOD 
 
+
+
+// check for array and build using the api calling and fetching the data as above
 
 
 
@@ -26,7 +20,7 @@ function book(e){
         little:128 time(s) <br>
         out:113 time(s) <br>
         down:101 time(s)`;
-// CHECK FOR CLASS AND METHOD 
+
         l.innerHTML=`gather:1 time(s) <br>
         sorrows:1 time(s) <br>
         joys: 1 time(s) <br>
@@ -34,20 +28,18 @@ function book(e){
         chile-life:1 time(s)`;
     }
 
-    // CHECK FOR CLASS AND METHOD 
-// CHECK FOR ARRAY 
-// CHECK FOR JS NOTATION
-// CHECK FOR AS MODELS AND NODES
-// CHECK FPR
-// CHECK FDOR
+// check for array and build using the api calling and fetching the data as above
 
 
 
 
 
+// check for array and build using the api calling and fetching the data as above
 
 
 
+
+// check for array and build using the api calling and fetching the data as above
 
 
     if(e.target.id=="hyde"){
@@ -67,7 +59,18 @@ function book(e){
     }
 
 
-    // CHECK FOR CLASS AND METHOD 
+
+
+
+
+
+
+// check for array and build using the api calling and fetching the data as above
+
+
+
+
+
     if(e.target.id=="lord"){
         read("./books/LOTR.txt","Lord Of The Rings");
         document.getElementById(m);
@@ -76,12 +79,6 @@ function book(e){
         power:127 time(s) <br>
         most:113 time(s) <br>
         for:101 time(s)`;
-        // CHECK FOR CLASS AND METHOD 
-// CHECK FOR ARRAY 
-// CHECK FOR JS NOTATION
-// CHECK FOR AS MODELS AND NODES
-// CHECK FPR
-// CHECK FDOR
 
         l.innerHTML=`hope:1 time(s) <br>
         mercy:1 time(s) <br>
@@ -91,7 +88,10 @@ function book(e){
         
     }
 }
-// CHECK FOR CLASS AND METHOD 
+
+
+// check for array and build using the api calling and fetching the data as above
+
 function read(url,title){
     var client = new XMLHttpRequest();
 client.open('GET', url);
@@ -104,54 +104,19 @@ client.onreadystatechange = function() {
 }
 client.send();
 }
-
-
-
-
-
-// CHECK FOR CLASS AND METHOD 
+// check for array and build using the api calling and fetching the data as above
 const removeWords = [ "a", "able", "about", "across", "after", "all", "almost", "also", "am", "among", "an", "and", "any", "are", "as", "at", "be", "because", "been", "but", "by", "can", "cannot", "could", "dear", "did", "do", "does", "either", "else", "ever", "every", "for", "from", "get", "got", "had", "has", "have", "he", "her", "hers", "him", "his", "how", "however", "i", "if", "in", "into", "is", "it", "its", "just", "least", "let", "like", "likely", "may", "me", "might", "most", "must", "my", "neither", "no", "nor", "not", "of", "off", "often", "on", "only", "or", "other", "our", "own", "rather", "said", "say", "says", "she", "should", "since", "so", "some", "than", "that", "the", "their", "them", "then", "there", "these", "they", "this", "tis", "to", "too", "twas", "us", "wants", "was", "we", "were", "what", "when", "where", "which", "while", "who", "whom", "why", "will", "with", "would", "yet", "you", "your", "ain't", "aren't", "can't", "could've", "couldn't", "didn't", "doesn't", "don't", "hasn't", "he'd", "he'll", "he's", "how'd", "how'll", "how's", "i'd", "i'll", "i'm", "i've", "isn't", "it's", "might've", "mightn't", "must've", "mustn't", "shan't", "she'd", "she'll", "she's", "should've", "shouldn't", "that'll", "that's", "there's", "they'd", "they'll", "they're", "they've", "wasn't", "we'd", "we'll", "we're", "weren't", "what'd", "what's", "when'd", "when'll", "when's", "where'd", "where'll", "where's", "who'd", "who'll", "who's", "why'd", "why'll", "why's", "won't", "would've", "wouldn't", "you'd", "you'll", "you're", "you've" ];
 
+
+
+
+
+
+
+
+// check for array and build using the api calling and fetching the data as above
 function details(t){
-    var lines=t.split("\n");
-    var words=[];
-    var wf=[];
-    lines.forEach((line)=>{
-        let ww=line.split(" ");
-        ww.forEach((w)=>{
-
-            if(removeWords.indexOf(w)==-1 && !(w==" "))
-            {
-                words.push(w);
-                wf.push(t.split(w).length);
-            }
-            
-        })
-    })
-
-
-
-
-
-
-
-
-
-
-
-    // CHECK FOR CLASS AND METHOD 
-    // console.log(words);
-    let max=0;
-    let w1="";
-    for(let i=0;i<words.length;i++){
-        if(wf[i]>max){
-            max=wf[i];
-            w1=words[i];
-        }
-    }
-    console.log(w1);
-
-
-
+    var words=t.split(" ");
+    words=words.filter(word=>removeWords.indexOf(word)==-1);
+    (document.getElementById("stats")).innerHTML=`Document Length: ${t.length} <br> Words Count: ${words.length}`;
 }
-

@@ -8,6 +8,9 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* check for div and span tag seperately*/
+
+
 
 header{
     height: 500px;
@@ -16,21 +19,20 @@ header{
     align-items: center;
     background-image: url(./images/ban.png);
     border-radius: 20px;
-}
+}/* check for div and span tag seperately*/
 main{
     padding: 50px 0px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
 article{
     background-color: white;
     width: 820px;
     height: 800px;
     overflow: auto;
 
-
+/* check for div and span tag seperately*/
 }
 aside{
     width: 420px;
@@ -40,7 +42,6 @@ section{
     background-color: white;
     margin-bottom: 30px;
 }
-/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
 .head{
     padding: 10px;
     background-color: rgba(220, 220, 220, 0.623);
@@ -48,10 +49,12 @@ section{
 .bo{
     padding: 20px;
 }
+
+/* check for div and span tag seperately*/
 input[type="text"]{
     padding: 10px;
     font-size: 20px;
-}/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+}
 button{
     padding: 10px;
     font-size: 20px;
@@ -64,12 +67,10 @@ button{
     align-items: flex-start;
     flex-direction: column;
 }
-
-/* giving attributesd and fa fu class and its represenattaion aao sufdsf  */
 article{
     font-size: 32px;
 }
-/*hgfdpk[ check for new*/
+
 .b{
     padding: 50px;
     font-size: 20px;
@@ -78,11 +79,9 @@ article{
     padding: 20px;
     
 }
-a{
+a{/* check for div and span tag seperately*/
     text-decoration: none;
 }
-
-/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
 #game{
     font-size: 40px;
     text-decoration: underline;

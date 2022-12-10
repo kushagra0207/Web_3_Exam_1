@@ -1,18 +1,31 @@
-//check for new variety and intsr
-
-
-//check for new variety and intsr
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    //check for new variety and intsr
+    //card options and try to invoke the same method by github and git on the same directionsa as prod
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const cardArray = [
       {
         name: 'fries',
         img: 'images/fries.png'
       },
-      {//card options
-
+      {
         name: 'cheeseburger',
         img: 'images/cheeseburger.png'
       },
@@ -20,14 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
         name: 'ice-cream',
         img: 'images/ice-cream.png'
       },
-//check for new variety and intsr
       {
         name: 'pizza',
         img: 'images/pizza.png'
       },
       {
-//check for new variety and intsr
-
         name: 'milkshake',
         img: 'images/milkshake.png'
       },
@@ -52,8 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         img: 'images/pizza.png'
       },
       {
-//check for new variety and intsr
-
         name: 'milkshake',
         img: 'images/milkshake.png'
       },
@@ -62,7 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
         img: 'images/hotdog.png'
       }
     ]
-  
+  //card options and try to invoke the same method by github and git on the same directionsa as prod
+
+
+
+
+
+
+
+
+
+
+
     cardArray.sort(() => 0.5 - Math.random())
   
     const grid = document.querySelector('.grid')
@@ -71,6 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardsChosenId = []
     let cardsWon = []
   
+
+
+
+
+
+
+
+
+    //card options and try to invoke the same method by github and git on the same directionsa as prod
     //create your board
     function createBoard() {
       for (let i = 0; i < cardArray.length; i++) {
@@ -79,11 +107,17 @@ document.addEventListener('DOMContentLoaded', () => {
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         grid.appendChild(card)
-//check for new variety and intsr
       }
     }
   
     //check for matches
+
+
+
+
+
+//card options and try to invoke the same method by github and git on the same directionsa as prod
+    //card options and try to invoke the same method by github and git on the same directionsa as prod
     function checkForMatch() {
       const cards = document.querySelectorAll('img')
       const optionOneId = cardsChosenId[0]
@@ -94,9 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
         alert('You have clicked the same image!')
       }
-      
-//check for new variety and intsr
-
       else if (cardsChosen[0] === cardsChosen[1]) {
         alert('You found a match')
         cards[optionOneId].setAttribute('src', 'images/white.png')
@@ -109,9 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cards[optionTwoId].setAttribute('src', 'images/blank.png')
         alert('Sorry, try again')
       }
-
-//check for new variety and intsr
-
       cardsChosen = []
       cardsChosenId = []
       resultDisplay.textContent = cardsWon.length
@@ -119,8 +147,15 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDisplay.textContent = 'Congratulations! You found them all!'
       }
     }
+
+
+
+
+
+
+    //card options and try to invoke the same method by github and git on the same directionsa as prod
   
-    //cRD FLIPPER NAD CHECKER FIR NEW WINDOWA 
+    //flip your card
     function flipCard() {
       let cardId = this.getAttribute('data-id')
       cardsChosen.push(cardArray[cardId].name)
