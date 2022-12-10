@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(to right,rgb(250, 250, 195),rgb(255, 196, 0));
+    padding: 50px 100px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/ban.png);
+    border-radius: 20px;
+}
+main{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+article{
+    background-color: white;
+    width: 820px;
+    height: 800px;
+    overflow: auto;
+
+
+}
+aside{
+    width: 420px;
+    height: 1000px;
+}
+section{
+    background-color: white;
+    margin-bottom: 30px;
+}
+/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+.head{
+    padding: 10px;
+    background-color: rgba(220, 220, 220, 0.623);
+}
+.bo{
+    padding: 20px;
+}
+input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+}/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+button{
+    padding: 10px;
+    font-size: 20px;
+}
+.books{
+    height: 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* giving attributesd and fa fu class and its represenattaion aao sufdsf  */
+article{
+    font-size: 32px;
+}
+/*hgfdpk[ check for new*/
+.b{
+    padding: 50px;
+    font-size: 20px;
+}
+.h{
+    padding: 20px;
+    
+}
+a{
+    text-decoration: none;
+}
+
+/* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+#game{
+    font-size: 40px;
+    text-decoration: underline;
+}

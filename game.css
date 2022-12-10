@@ -1,0 +1,22 @@
+
+  /* giving attributesd and fa fu class and its represenattaion aao sufdsf ........... */
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.368);
+}  
+
+
+
+
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+  }
+
